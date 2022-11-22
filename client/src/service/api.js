@@ -2,7 +2,7 @@ import axios from 'axios';
 import { API_NOTIFICATION_MESSAGES, SERVICE_URLS } from '../constants/config';
 import { getType } from '../utills/common-utils';
 
-const API_URL = ''
+const API_URL = '/api'
 
 const axiosInstance = axios.create({
     baseURL: API_URL,
