@@ -6,9 +6,14 @@ import {Edit, Delete, ThumbUp, ThumbUpOffAltOutlined} from '@mui/icons-material'
 import {DataContext} from '../../context/DataProvider';
 import Comments from './comments/Comments';
 
-const Container = styled(Box)`
-  margin: 50px 100px;
-`;
+const Container = styled(Box)(({theme})=>({
+  margin: "50px 100px",
+
+  [theme.breakpoints.down('md')]: {
+    margin: '5px'
+  }
+
+}))
 
 const Image = styled('img')({
   width: '100%',

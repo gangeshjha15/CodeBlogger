@@ -10,9 +10,13 @@ const Image = styled('img')({
     height:'50vh',
     objectFit:'cover',
 })
-const Container = styled(Box)`
-    margin:50px 100px;
-`; 
+const Container = styled(Box)(({theme})=>({
+    margin: "50px 100px",
+  
+    [theme.breakpoints.down('md')]: {
+      margin: '5px'
+    }  
+  }))
 
 const StyledFormControl = styled(FormControl)`
     margin-top: 20px;

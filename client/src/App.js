@@ -3,9 +3,9 @@ import { BrowserRouter, Routes, Route, Navigate, Outlet } from "react-router-dom
 import { useState } from "react";
 
 //components
-import Login from "./components/account/Login";
+// import Login from "./components/account/Login";
 import TestLogin from "./components/account/TestLogin";
-import Home from "./components/home/Home";
+// import Home from "./components/home/Home";
 import Header from "./components/header/Header";
 import CreatePost from "./components/posts/CreatePost";
 import DetailView from "./components/details/DetailView";
